@@ -3,7 +3,6 @@
 import styles from '../styles/Game.module.css';
 
 const GameStatus = ({ currentPlayer, captures }) => {
-    // Guard clause to prevent errors if captures object hasn't loaded yet
     if (!captures) {
         return <div className={styles.statusPanel}>Loading status...</div>;
     }
@@ -31,3 +30,4 @@ const GameStatus = ({ currentPlayer, captures }) => {
 };
 
 export default GameStatus;
+
