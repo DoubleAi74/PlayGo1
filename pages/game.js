@@ -22,7 +22,7 @@ const WHITE = 2;
 const BOTH = 3;
 const DB_GAME_ID = 'main-game';
 const SESSION_STORAGE_KEY = `go-game-data-${DB_GAME_ID}`;
-const BOARD_SIZES = [7, 9, 13, 15, 17, 19]; // ADD THIS LINE
+const BOARD_SIZES = [7, 9, 11, 13, 15, 17, 19]; // ADD THIS LINE
 
 const createInitialGameState = (size = 19, mode = 'online') => ({
     gameId: Date.now().toString(),
