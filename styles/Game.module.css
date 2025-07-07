@@ -132,9 +132,27 @@
 .controls {
     margin-top: 20px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 15px;
     flex-wrap: wrap;
     justify-content: center;
+}
+/* 
+.controls {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1rem;
+} */
+
+
+.controls.horizontal {
+  flex-direction: row;
+  justify-content: center;
 }
 
 .gameButton {
@@ -294,7 +312,7 @@
 
 .localPlayButton {
     background-color: #6c757d;
-    width: 100%;
+    width: 50%;
     margin-top: 10px;
 }
 

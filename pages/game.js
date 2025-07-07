@@ -217,8 +217,8 @@ export default function GamePage() {
                         </div>
                         <p>This will start a new game for everyone, overwriting any game in progress.</p>
                         <div className={styles.controls}>
-                            <button onClick={() => startNewGame('online', null, boardSizeInput)} className={styles.roleButton}>Play Online</button>
-                            <button onClick={() => startNewGame('local', BOTH, boardSizeInput)} className={`${styles.roleButton} ${styles.localPlayButton}`}>Play Both Sides (Local)</button>
+                            <button onClick={() => startNewGame('online', null, boardSizeInput)} className={styles.roleButton}>Play on two screens</button>
+                            <button onClick={() => startNewGame('local', BOTH, boardSizeInput)} className={`${styles.roleButton} ${styles.localPlayButton}`}>Share this device</button>
                         </div>
                     </div>
                 );
@@ -228,7 +228,7 @@ export default function GamePage() {
                     <div className={styles.roleSelectionContainer}>
                         <h2>Online Game ({gameState?.boardSize}x{gameState?.boardSize})</h2>
                         <p>A new online game has started. Choose your color to join.</p>
-                        <div className={styles.controls}>
+                        <div  className={`${styles.controls} ${styles.horizontal}`}>
                             <button onClick={() => handleColorSelect(BLACK)} className={styles.roleButton}>Join as Black</button>
                             <button onClick={() => handleColorSelect(WHITE)} className={styles.roleButton}>Join as White</button>
                         </div>
@@ -258,7 +258,7 @@ export default function GamePage() {
                                 isMyTurn={isMyTurn}
                             />
                         </div>
-                        <div className={styles.controls}>
+                        <div className={`${styles.controls} ${styles.horizontal}`}>
                             <button onClick={handlePass} className={styles.gameButton} disabled={!isMyTurn}>Pass</button>
                             <button onClick={handleResign} className={styles.gameButton} disabled={!isMyTurn}>Resign</button>
                             <button onClick={returnToModeSelection} className={styles.gameButton}>Exit Game</button>
