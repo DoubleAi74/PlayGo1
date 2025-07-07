@@ -13,11 +13,11 @@ const GameStatus = ({ currentPlayer, captures }) => {
             <div className={styles.turnIndicator}>
                 {currentPlayer === 1 ? (
                     <span className={styles.blackIndicator}>
-                        <span className={styles.playerStoneIcon}></span> Black's Turn
+                        <span className={styles.playerStoneIcon}></span> Black&apos;s Turn
                     </span>
                 ) : (
                     <span className={styles.whiteIndicator}>
-                        <span className={styles.playerStoneIcon}></span> White's Turn
+                        <span className={styles.playerStoneIcon}></span> White&apos;s Turn
                     </span>
                 )}
             </div>
