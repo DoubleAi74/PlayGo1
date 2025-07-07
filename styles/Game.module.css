@@ -191,3 +191,102 @@
     margin-top: 0;
 }
 
+
+.localPlayButton {
+    background-color: #6c757d; /* A neutral gray color */
+    width: 60%; /* Make it full-width to stand out */
+    margin-top: 10px;
+}
+
+.localPlayButton:hover {
+    background-color: #5a6268;
+}
+
+
+
+
+
+
+
+
+
+
+/* .sizeInputContainer {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.sizeInputContainer label {
+    font-size: 1.1em;
+}
+
+.sizeInputContainer input {
+    font-size: 1.1em;
+    width: 60px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #777;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sizeInputContainer {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.sizeInputContainer label {
+    font-size: 1.1em;
+}
+
+.sizeInputContainer input {
+    font-size: 1.1em;
+    width: 60px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #777;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+}
+
+.localPlayButton {
+    background-color: #6c757d;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.localPlayButton:hover {
+    background-color: #5a6268;
+}
+
+/* This can be used for the "Back to Main Menu" button */
+.resetButton {
+    margin-top: 20px;
+    background-color: #a66 !important;
+}
+
+.resetButton:hover {
+    background-color: #b77 !important;
+}
